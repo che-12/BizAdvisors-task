@@ -114,6 +114,7 @@ header nav ul li:hover> .child{
     padding-left: 15px;
     border: 1px solid grey;
     border-radius: 50px;
+    background: none;
 }
 .services form img{
     height: 20px;
@@ -539,4 +540,29 @@ footer .navi .right li{
     border: none;
     background-color: var(--pricolor);
     cursor: pointer;
+}
+
+
+.services .typing{
+    position: relative;
+    top: -30px;
+    left: -150px;
+    z-index: 1;
+    text-align: left;
+}
+.services .typing::after{
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 18px;
+    background-color: black;
+    animation: blink 0.5s infinite ease;
+}
+@keyframes blink{
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
