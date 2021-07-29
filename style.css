@@ -1,0 +1,542 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+:root{
+    --pricolor: #ff9800;
+}
+header{
+    position: sticky;
+    top: 0;
+    box-shadow: 10px 0px 5px rgba(0, 0, 0, 0.9);
+}
+header .number{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    background-color: var(--pricolor);
+}
+header .number .wapp{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    margin: 5px 15px;
+}
+header .number .wapp p{
+    font-size: 15px;
+    font-weight: bold;
+}
+.wapp img{
+    height: 30px;
+    margin: 0px 5px;
+}
+header nav{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 15px; */
+}
+header nav img{
+    height: 70px;
+    padding-left: 15px;
+}
+header nav .nav{
+    display: flex;
+}
+header nav .nav li{
+    list-style: none;
+    padding: 30px 0px;
+    font-weight: bold;
+}
+header nav .nav li a{
+    padding: 15px;
+    font-size: 14px;
+}
+header nav .nav>li> a:hover{
+    background-color: var(--pricolor);
+    cursor: pointer;
+}
+header nav .nav .child{
+    position: absolute;
+    background-color: white;
+    display: none;
+    padding: 0;
+    margin: 0;
+    top: 100%;
+}
+header nav .nav .child li{
+    padding: 5px 0px;
+    border-bottom: 1px solid grey;
+}
+header nav .nav .child li:hover{
+    background-color: var(--pricolor);
+}
+header nav ul li:hover> .child{
+    display: block;
+}
+
+/* Services */
+.services{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    background-color: #f6f6f6;
+}
+.services h2{
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+.services h2 span{
+    color: var(--pricolor);
+}
+.services p{
+    font-size: 1.5rem;
+    line-height: 1.3;
+    /* width: 500px; */
+    text-align: center;
+    font-weight: 200;
+    margin-bottom: 40px;
+}
+.services h3{
+    font-size: 30px;
+    margin: 25px;
+}
+.services form{
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    border: 1px solid grey;
+    border-radius: 50px;
+}
+.services form img{
+    height: 20px;
+    /* padding: 10px; */
+}
+.services form input{
+    border: none;
+    background: none;
+    font-size: 20px;
+    width: 500px;
+    padding: 10px;
+} 
+.services .popular{
+    display: flex;
+    flex-wrap: wrap;
+    width: 760px;
+    justify-content: center;
+    align-items: center;
+    padding: 35px 50px;
+    background-color: var(--pricolor);
+    border-radius: 20px;
+}
+.services .popular a{
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px;
+    margin:5px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
+
+
+/* About section */
+.about{
+    display: flex;
+    padding: 40px 200px;
+    align-items: center;
+    /* border: 2px solid green; */
+}
+.about div{
+    width: 50%;
+    padding-right: 20px;
+}
+.about div h3{
+    font-size: 30px;
+}
+.about div p{
+    line-height: 1.4;
+    margin: 20px 0;
+}
+.about div button{
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 30px;
+    background-color: var(--pricolor);
+    border:none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.about img{
+    /* padding: 20px; */
+    width: 50%;
+}
+
+
+/* call us section  */
+.callus{
+    background: url('img/callus.jpg') no-repeat center center/cover;
+    margin: 0px 200px;
+    color: white;
+}
+.callus .call{
+    background-color: rgba(0, 0, 0, 0.9);
+    text-align: center;
+    padding: 60px;
+}
+.callus .call h1{
+    font-size: 30px;
+}
+.callus .call p{
+    font-size: 20px;
+    margin: 13px 0px;
+}
+.callus .call button{
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 30px;
+    background-color: var(--pricolor);
+    border:none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* People saying section  */
+.people{
+    margin: 40px 0px;
+    padding: 40px 200px;
+    text-align: center;
+    background-color: #f6f6f6;
+}
+.people h3{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.names{
+    display: flex;
+    justify-content: space-between;
+}
+.people .names .person{
+    background-color: white;
+    width: 30%;
+    padding: 35px;
+}
+.people .names .person p{
+    line-height: 1.5;
+}
+.people .names .person .pic{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.people .names .person img{
+    height: 15px;
+    margin: 15px 2px;
+}
+.people .names .person .pic .pimg{
+    margin: 0px;
+    height: 100%;
+}
+.people .names .person h5{
+    font-size: 17px;
+}
+
+/* clients sections */
+.clientsection{
+    text-align: center;
+    padding: 0px 200px;
+    /* padding-bottom: 40px; */
+}
+.clientsection h3{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.clientsection .clients{
+    display: flex;
+    justify-content: space-between;
+}
+.clientsection .clients div{
+    display: flex;
+    align-items: center;
+}
+
+/* choosesection */
+
+.choosesection{
+    background-color: #f6f6f6;
+    margin: 40px 0px;
+    padding: 40px 200px;
+    text-align: center;
+}
+.choosesection h3{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.choosesection .cards{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.choosesection .cards .card{
+    width: 23%;
+    background-color: var(--pricolor);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 160px;
+    font-weight: bold;
+    margin-top: 25px;
+}
+.choosesection .cards .card img{
+    width: 50px;
+    margin: 10px auto;
+}
+.choosesection .cards .black{
+    background-color: black;
+    color: white;
+}
+.choosesection .cards .black img{
+    filter: invert(360);
+}
+.choosesection .cards .blue{
+    background-color: rgb(9, 9, 109);
+}
+
+/* newsletter section  */
+.newsletter{
+    height: 250px;
+    background-color: var(--pricolor);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.newsletter h3{
+    font-size: 30px;
+    /* margin-bottom: 30px; */
+}
+.newsletter input{
+    width: 500px;
+    font-size: 15px;
+    padding: 10px;
+    border: 1 px solid gray;
+    margin: 20px;
+}
+.newsletter button{
+    background-color: black;
+    padding: 10px 30px;
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+
+/* Footer Section */
+footer{
+    background-color: black;
+    padding: 20px 200px;
+}
+footer a{
+    text-decoration: none;
+}
+footer .cols{
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0px;
+    text-align: left;
+}
+footer .cols .col{
+    width: 23%;
+}
+footer .cols .col h3{
+    color: var(--pricolor);
+    padding-bottom: 15px;
+    border-bottom: 0.01px solid rgb(70, 70, 70);
+}
+footer .cols .col li{
+    margin: 10px 0px;
+    list-style: none;
+}
+footer .cols .col li a{
+    color: white;
+    
+}
+
+footer{
+    text-align: center;
+}
+footer .navi .right img{
+    filter: invert(360);
+    height: 15px;
+    cursor: pointer;
+}
+footer .navi{
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid var(--pricolor);
+    border-bottom: 2px solid var(--pricolor);
+    padding: 20px 0px;
+    align-items: center;
+}
+footer .navi .left, footer .navi .right{
+    display: flex;
+}
+footer .navi .left li{
+    list-style: none;
+}
+footer .navi .left a{
+    padding: 10px;
+    color: white;
+    font-size: 0.8rem;
+}
+footer .navi .right li{
+    padding: 5px;
+    list-style: none;
+}
+#payment{
+    /* display: block; */
+    margin: 20px;
+}
+
+/* blogssection
+ */
+.blogsection{
+    padding: 0px 200px;
+    text-align: center;
+    padding-bottom: 40px;
+}
+.blogsection h3{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.blogsection .blogs{
+    display: flex;
+    justify-content: space-between;
+}
+.blogsection .blogs .blog{
+    height: 500px;
+    width: 30%;
+    overflow: hidden;
+    border-radius: 10px 10px 0px 0px;
+}
+.blogsection .blogs .blog img{
+    display: block;
+    height: 50%;
+    margin: 0;
+}
+.blogsection .blogs .blog .info{
+    margin: 0;
+    border: 1px solid var(--pricolor);
+    border-radius: 0px 0px 10px 10px;
+    height: 50%;
+    padding: 25px;
+    text-align: left;
+}
+.blogsection .blogs .blog .info h4{
+    margin: 0;
+    font-size: 18px;
+}
+.blogsection .blogs .blog .info p{
+    margin: 15px 0px;
+    line-height: 1.4;
+}
+.blogsection .blogs .blog .info button{
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 30px;
+    background-color: var(--pricolor);
+    border:none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* glancesection */
+.glancesection{
+    margin: 40px 0px;
+    padding: 40px 200px;
+    background-color: #f6f6f6;
+    text-align: center;
+}
+.glancesection h3{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.glancesection .headings{
+    display: flex;
+    padding: 10px 30px;
+    justify-content: space-between;
+    transition: all 1s ease-in-out;
+}
+.glancesection .headings li{
+    list-style: none;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 15px 10px;
+}
+.glancesection .headings .active{
+    border-bottom: 2px solid black;
+    color: var(--pricolor);
+}
+.glancesection .window{
+    height: 400px;
+    overflow: hidden;
+}
+.glancesection .caro{
+    display: none;
+    justify-content: space-between;
+    transition: all 1s ease-in-out;
+}
+.glancesection .act{
+    display: flex;
+}
+.glancesection .caro .box{
+    width: 23%;
+    background-color: white;
+    padding: 20px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.glancesection .caro .box h4{
+    font-size: 20px;
+    padding: 0px 35px;
+}
+.glancesection .caro .box .price{
+    background-color: var(--pricolor);
+    padding: 25px;
+}
+.glancesection .caro .box .price img{
+    height: 40px;
+    margin-right: 5px;
+}
+.glancesection .caro .box .price span{
+    font-size: 40px;
+    font-weight: bold;
+    /* padding-bottom: 20px; */
+}
+.glancesection .caro .box .price p{
+    font-weight: bold;
+    color: white;
+}
+.glancesection .caro .box button{
+    /* margin: 0px 30px; */
+    /* color: white; */
+    padding:10px;
+    font-size: 17px;
+    font-weight: bold;
+    border: none;
+    background-color: var(--pricolor);
+    cursor: pointer;
+}
